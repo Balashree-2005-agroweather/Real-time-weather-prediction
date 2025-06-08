@@ -1,0 +1,68 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Weather App Container */
+.weather-app {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  padding: 2rem;
+  width: 320px;
+  text-align: center;
+  color: #fff;
+}
+
+/* City and Country */
+.weather-app h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Temperature Display */
+.temperature {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+/* Weather Description */
+.description {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+/* Weather Icon */
+.weather-icon {
+  width: 80px;
+  height: 80px;
+  margin: 1rem auto;
+}
+
+/* Extra Weather Details */
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.detail-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: 30%;
+  font-size: 0.9rem;
+}
