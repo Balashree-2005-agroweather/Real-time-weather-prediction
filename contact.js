@@ -1,3 +1,8 @@
 export default function Contact() {
-  return <h1>Contact Us</h1>;
+  return (
+    <div>
+      <h1>Contact Us</h1>
+      <p>For inquiries, reach us at contact@weatherapp.com</p>
+    </div>
+  );
 }
