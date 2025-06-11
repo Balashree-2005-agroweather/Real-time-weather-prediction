@@ -1,39 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Weather Prediction App</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #83a4d4, #b6fbff);
-      text-align: center;
-      padding: 50px;
-    }
-    .container {
-      background-color: white;
-      border-radius: 20px;
-      padding: 30px;
-      display: inline-block;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    input, button {
-      padding: 10px;
-      font-size: 16px;
-      margin: 10px;
-    }
-    #weather {
-      margin-top: 20px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-
-  <div class="container">
-    <h1>Weather Prediction App</h1>
-    <input type="text" id="city" placeholder="Enter city name">
-    <button onclick="getWeather()">Get Weather</button>
-    <div id="weather"></div>
+  <div class="weather-app">
+    <div class="search-box">
+      <input type="text" id="city-input" placeholder="Enter city..." />
+      <button id="search-btn">Search</button>
+    </div>
+    <div class="weather-info" id="weather-info">
+      <h2 id="city-name">City Name</h2>
+      <img id="weather-icon" src="" alt="Weather Icon" />
+      <p id="temperature">--°C</p>
+      <p id="description">Description</p>
+      <div class="details">
+        <p>Humidity: <span id="humidity">--%</span></p>
+        <p>Wind: <span id="wind">-- km/h</span></p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
