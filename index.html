@@ -3,23 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Weather App</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Weather Predictor</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="weather-app">
+  <div class="weather-container">
+    <h1>Weather Prediction</h1>
+    
     <div class="search-box">
-      <input type="text" id="city-input" placeholder="Enter city..." />
-      <button id="search-btn">Search</button>
+      <input type="text" placeholder="Enter city name" />
+      <button>Check Weather</button>
     </div>
-    <div class="weather-info" id="weather-info">
-      <h2 id="city-name">City Name</h2>
-      <img id="weather-icon" src="" alt="Weather Icon" />
-      <p id="temperature">--°C</p>
-      <p id="description">Description</p>
+
+    <div class="weather-display">
+      <h2>City Name</h2>
+      <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon" />
+      <p class="temp">25°C</p>
+      <p class="condition">Clear Sky</p>
       <div class="details">
-        <p>Humidity: <span id="humidity">--%</span></p>
-        <p>Wind: <span id="wind">-- km/h</span></p>
+        <p>Humidity: 60%</p>
+        <p>Wind Speed: 15 km/h</p>
       </div>
     </div>
   </div>
